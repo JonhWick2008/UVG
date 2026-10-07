@@ -1,0 +1,283 @@
+/* =========================================================
+   ESTILO GENERAL
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background: #080808;
+    color: #b7b7b7;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   TARJETAS
+   ========================================================= */
+
+.tarjeta {
+    width: calc(100% - 40px);
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #555;
+    background: #181a13;
+}
+
+
+/* =========================================================
+   ENCABEZADO
+   ========================================================= */
+
+body > .tarjeta:first-of-type {
+    min-height: 120px;
+    margin-top: 16px;
+    margin-bottom: 14px;
+    padding: 8px 12px;
+    display: block;
+    position: relative;
+    text-align: left;
+}
+
+body > .tarjeta:first-of-type img {
+    width: 75px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+body > .tarjeta:first-of-type h1 {
+    margin: 3px 0 2px 84px;
+    color: #999d22;
+    font-size: 28px;
+    line-height: 1.1;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+body > .tarjeta:first-of-type h2 {
+    margin: 2px 0 1px 84px;
+    color: #999d22;
+    font-size: 18px;
+    line-height: 1.15;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+body > .tarjeta:first-of-type h3 {
+    margin: 1px 0 0 84px;
+    color: #999d22;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   TÍTULO PRINCIPAL
+   ========================================================= */
+
+body > h1 {
+    width: calc(100% - 40px);
+    max-width: 1250px;
+    margin: 26px auto 10px auto;
+    padding: 0;
+    color: #aaa52d;
+    font-size: 29px;
+    line-height: 1.1;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* =========================================================
+   TEXTO DE CONSTRUCCIÓN
+   ========================================================= */
+
+body > p {
+    width: calc(100% - 40px);
+    max-width: 1100px;
+    margin: 0 auto;
+    color: #b7d0e9;
+    font-size: 15px;
+    line-height: 1.35;
+    text-align: center;
+}
+
+
+/* =========================================================
+   IMAGEN DE CONSTRUCCIÓN
+   ========================================================= */
+
+body > img {
+    display: block;
+    width: 300px;
+    max-width: 85%;
+    height: auto;
+    margin: 18px auto 28px auto;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   PIE DE PÁGINA
+   ========================================================= */
+
+body > .tarjeta:last-of-type {
+    min-height: 70px;
+    margin-top: 0;
+    margin-bottom: 18px;
+    padding: 10px;
+    background: #181a13;
+    text-align: center;
+    color: #999;
+}
+
+body > .tarjeta:last-of-type h3 {
+    margin: 3px 0;
+    color: #999;
+    font-size: 12px;
+    line-height: 1.35;
+    font-weight: normal;
+}
+
+img {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    body > .tarjeta:first-of-type {
+        width: calc(100% - 30px);
+        min-height: 105px;
+        padding: 8px;
+    }
+
+    body > .tarjeta:first-of-type img {
+        width: 65px;
+        height: 86px;
+        left: 8px;
+        top: 8px;
+    }
+
+    body > .tarjeta:first-of-type h1 {
+        margin-left: 73px;
+        font-size: 23px;
+    }
+
+    body > .tarjeta:first-of-type h2 {
+        margin-left: 73px;
+        font-size: 17px;
+    }
+
+    body > .tarjeta:first-of-type h3 {
+        margin-left: 73px;
+        font-size: 13px;
+    }
+
+    body > h1 {
+        width: calc(100% - 30px);
+        font-size: 27px;
+    }
+
+    body > p {
+        width: calc(100% - 30px);
+        font-size: 15px;
+    }
+
+    body > img {
+        width: 300px;
+        max-width: 90%;
+    }
+
+    body > .tarjeta:last-of-type {
+        width: calc(100% - 30px);
+    }
+}
+
+
+/* =========================================================
+   CELULAR
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+    body > .tarjeta:first-of-type {
+        min-height: 92px;
+        padding: 6px;
+    }
+
+    body > .tarjeta:first-of-type img {
+        width: 55px;
+        height: 72px;
+        left: 6px;
+        top: 6px;
+    }
+
+    body > .tarjeta:first-of-type h1 {
+        margin-left: 62px;
+        font-size: 18px;
+    }
+
+    body > .tarjeta:first-of-type h2 {
+        margin-left: 62px;
+        font-size: 14px;
+    }
+
+    body > .tarjeta:first-of-type h3 {
+        margin-left: 62px;
+        font-size: 11px;
+    }
+
+    body > h1 {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    body > p {
+        font-size: 14px;
+    }
+
+    body > img {
+        width: 280px;
+        max-width: 90%;
+        margin-top: 18px;
+        margin-bottom: 25px;
+    }
+
+    body > .tarjeta:last-of-type {
+        padding: 9px;
+    }
+
+    body > .tarjeta:last-of-type h3 {
+        font-size: 10px;
+    }
+}
